@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "react-native-redux-crypto-tracker",
+    "slug": "react-native-redux-crypto-tracker",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "react-native-redux-crypto-tracker"
+}
