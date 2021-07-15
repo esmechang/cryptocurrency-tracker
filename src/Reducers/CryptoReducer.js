@@ -8,7 +8,7 @@ const initialState = {
     isFetching: null,
     data: [],
     hasError: false,
-    erroMessage: null,
+    errorMessage: null,
 };
 
 
@@ -20,14 +20,14 @@ export default function(state = [], action) {
                 isFetching: true,
                 data: null,
                 hasError: false,
-                erroMessage: null
+                errorMessage: null
             });
         case FETCHING_COIN_DATA_SUCCESS:
             return Object.assign({}, state, {
                 isFetching: false,
                 data: action.payload,
                 hasError: false,
-                erroMessage: null
+                errorMessage: null
             });
         case FETCHING_COIN_DATA_FAIL:
             return Object.assign({}, state, {
