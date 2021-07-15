@@ -1,4 +1,4 @@
-import API_KEY from '../secret';
+import { API_KEY } from '../secret';
 
 export const apiBaseUrl = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
 
