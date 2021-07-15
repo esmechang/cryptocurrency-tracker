@@ -12,7 +12,7 @@ const initialState = {
 };
 
 
-export default function(state = [], action) {
+export default function(state = initialState, action) {
     switch(action.type) {
         // when we are fetching the data and showing the spinner
         case FETCHING_COIN_DATA:
