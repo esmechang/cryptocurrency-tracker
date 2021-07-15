@@ -14,21 +14,23 @@ class CryptoContainer extends Component {
 
     renderCoinCards() {
         const { crypto } = this.props;
-        return crypto.data.map((coin, index) => {
+        console.log(crypto)
+        return crypto.data.map((coin, index) => (
             <CoinCard
                 key={index}
                 coin_name={coin.name}
                 symbol={coin.symbol}
-                price_usd={coin.price_usd}
-                percent_change_24h={coin.percent_change_24h}
-                percent_change_7d={coin.percent_change_7d}
+                price_usd={coin.price}
+                percent_change_1d={coin.interval="1d".price_change_pct}
+                percent_change_7d={coin.interval="7d".price_change_pct}
             />
-        })
+        ))
     }
 
     render() {
         const { crypto } = this.props;
         const { contentContainer } = styles;
+        console.log('hello')
 
         if (crypto.isFetching) {
             return (
